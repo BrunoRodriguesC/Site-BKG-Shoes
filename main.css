@@ -1,0 +1,452 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: whitesmoke;
+}
+.container {
+    width: 1600px;
+    max-width: 100%;
+    margin: auto;
+    align-items: center;
+}
+
+header {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    font-size: 20px;
+    padding: 0 20%;
+    color: whitesmoke;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(24, 24, 80);
+}
+
+header nav li {
+    font-size: 25px;
+    margin: 0 10px;
+    display: inline;
+    list-style: none;
+}
+
+header a {
+    color: whitesmoke;
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+
+header a:hover {
+    border-bottom:  solid 2px goldenrod;
+}
+
+#Sobre {
+    height: 1100px;
+    width: 100%;
+    display: flex;
+}
+
+#Sobre img {
+    height: 50%;
+    width: 50%;
+    margin: auto;
+    border: solid 1px black;
+}
+
+.descricao-loja {
+    width: 60%;
+    height: 100%;
+    padding: 20% 10%;
+}
+
+.descricao-loja h1{
+    width: 60%;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 50px;
+    border-bottom: solid 3px goldenrod;
+}
+
+.descricao-loja p{
+    font-size: 25px;
+}
+
+#Produtos {
+    height: 1100px;
+    width: 100%;
+}
+
+#Produtos h1 {
+    width: 35%;
+    margin: auto;
+    font-size:40px;
+    padding-top: 5%;
+    text-align: center;
+    border-bottom: solid 3px goldenrod;
+}
+
+.area-produtos ul {
+    display: flex;
+    width: 100%;
+    margin: 10% auto;
+    list-style: none;
+    justify-content: center;
+}
+
+.area-produtos li {
+    margin: 0 1%;
+}
+
+.area-produtos img {
+    height: 300px;
+    width: 90%;
+}
+
+.area-produtos h2 {
+    width: 250px;
+    margin: auto;
+    font-size:30px;
+    padding-top: 10%;
+    text-align: center;
+    border-bottom: solid 3px goldenrod;
+}
+.area-produtos p {
+    width: 100%;
+    margin: auto;
+    font-size:25px;
+    padding-top: 5%;
+    text-align: center;
+}
+.area-produtos button {
+    width: 70%;
+    height: 50px;
+    border: none;
+    margin: auto;
+    opacity: 80%;
+    font-size:18px;
+    margin: 10% 15%;
+    border-radius: 5px;
+    color: whitesmoke;
+    background-color:black;
+    text-align: center;
+}
+
+.area-produtos button:hover {
+    opacity: 100%;
+    outline:  solid 4px goldenrod;
+}
+
+#Loja-Parceira {
+    height: 100%;
+    width: 100%;
+}
+
+#Loja-Parceira h1{
+    width: 35%;
+    margin: auto;
+    padding-top: 5%;
+    font-size: 40px;
+    text-align: center;
+    border-bottom: solid 3px goldenrod;
+}
+
+.descricao-loja-parceira {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 15% 10%;
+}
+
+.descricao-loja-parceira img {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    border: solid 1px black;
+}
+
+.descricao-loja-parceira p{
+    width: 100%;
+    padding: 10%;
+    font-size: 25px;
+}
+
+.informacoes-loja-parceira {
+    height: 100%;
+    width: 50%;
+}
+
+footer {
+    margin-top: 7%;
+    height: 60px;
+    width: 100%;
+    opacity: 90%;
+    align-items: center;
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 12%;
+    background-color: black;
+}
+
+footer a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 22px;
+}
+
+footer a:hover {
+    border-bottom: solid 3px goldenrod;
+}
+
+footer nav li{
+    display: inline;
+    margin-left: 16px;
+    font-size: 22px;
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+}
+
+footer img {
+    height: 30px;
+    width: 30px;
+}
+
+@media screen and (min-width:641px) and (max-width:1023px) {
+    
+    header {
+        display: flex;
+        padding: 20px;
+        font-size: 16px;
+        width: 100%;
+        max-width: 1023px;
+    }
+
+    header h1 {
+        width: 50%
+    }
+
+    .container {
+        width: 90%;
+        max-width: 100%;
+        margin: auto;
+        align-items: center;
+    }
+
+    #Sobre {
+        height: 1100px;
+        width: 100%;
+        display: block;
+        margin: auto;
+        padding: 50px;
+    }
+    
+    #Sobre img {
+        height: 50%;
+        width: 90%;
+        margin: 0 50px;
+        border: solid 1px black;
+    }
+    
+    .descricao-loja {
+        width: 100%;
+        padding: 10% 10%;
+    }
+    
+    .descricao-loja h1{
+        width: 100%;
+    }
+
+    #Produtos {
+        height: 100%;
+        width: 100%;
+        margin-bottom: 200px;
+    }
+    
+    #Produtos h1 {
+        width: 70%;
+        padding-bottom: 10px;
+    }
+
+    #Produtos h2 {
+        font-size: 25px;
+        width: 90%;
+    } 
+
+    .area-produtos ul {
+        display: grid;
+        grid-template-columns: repeat(2, 32.6%);
+        column-gap: 1%;
+        row-gap: 5%;
+        width: 100%;
+    }
+    
+    .area-produtos li {
+        width: 100%;
+        margin: 0 10%;
+    }
+    
+    .area-produtos img {
+        height: 60%;
+        width: 90%;
+    }
+    
+    #Loja-Parceira h1{
+        width: 70%;
+    }
+
+    .descricao-loja-parceira a {
+        height: 350px;
+        width: 50%;
+    }
+    
+    .descricao-loja-parceira img {
+        height: 100%;
+        width: 100%;
+    }
+    
+    .descricao-loja-parceira p{
+        width: 100%;
+        padding: 10%;
+        font-size: 18px;
+    }
+    
+}
+
+@media screen and (max-width:640px) {
+
+    header {
+        display: flex;
+        padding: 10px;
+        font-size: 10px;
+        width: 100%;
+        max-width: 1023px;
+    }
+
+    header h1 {
+        width: 50%;
+    }
+    header nav {
+        width: 50%;
+    }
+    header a {
+        font-size: 17px;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 100%;
+        margin: auto;
+        align-items: center;
+    }
+
+    #Sobre {
+        display: block;
+        height: 900px;
+        padding: 50px;
+        padding-bottom: 0;
+    }
+    
+    #Sobre img {
+        height: 30%;
+        width: 100%;
+        border: solid 1px black;
+    }
+    
+    .descricao-loja {
+        height: 60%;
+        width: 100%;
+    }
+    
+    .descricao-loja h1{
+        font-size: 30px;
+        width: 100%;
+    }
+
+    .descricao-loja p{
+        font-size: 24px;
+    }
+
+    #Produtos {
+        height: 100%;
+        width: 100%;
+        margin-bottom: 200px;
+    }
+    
+    #Produtos h1 {
+        width: 70%;
+        font-size: 25px;
+        padding-bottom: 10px;
+    }
+
+    #Produtos h2 {
+        font-size: 25px;
+        width: 90%;
+    } 
+
+    .area-produtos ul {
+        display: block;
+        width: 70%;
+    }
+    
+    .area-produtos li {
+        margin: 10% 0;
+    }
+    
+    .area-produtos img {
+        height: 60%;
+        width: 100%;
+    }
+    
+    #Loja-Parceira h1{
+        font-size: 26px;
+        width: 70%;
+    }
+
+    .descricao-loja-parceira {
+        display: block;
+        height: 750px;
+        padding: 50px;
+    }
+    
+    .descricao-loja-parceira img {
+        height: 30%;
+        width: 100%;
+        border: solid 1px black;
+    }
+    
+    .descricao-loja-parceira p{
+        width: 100%;
+        padding: 10%;
+        font-size: 22px;
+    }
+
+    .informacoes-loja-parceira {
+        height: 40%;
+        width: 100%;
+        margin-bottom: 40%;
+    }
+
+    footer {
+        display: flex;
+        padding: 10px;
+        font-size: 10px;
+    }
+
+    footer nav {
+        width: 70%;
+    }
+
+    footer a {
+        font-size: 15px;
+    }
+
+    footer div {
+        display: flex;
+    }
+}
